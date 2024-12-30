@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("heart_bg.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: center;
+    overflow: hidden;
+}
+.confession {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #d23669;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background: #d23669;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background: #e75887;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 412px) {
+    body {
+        padding: 10px;
+    }
+
+    .confession {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 8px 16px; 
+    }
+}
