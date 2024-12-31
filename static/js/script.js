@@ -42,7 +42,7 @@ let originHeart = null;
 
 // OBJ加载器
 new THREE.OBJLoader().load(
-  "http://c.waaf.top/lxax/static/js/heart_2.obj",
+  "https://c.waaf.top/lxax/static/js/heart_2.obj",
   (obj) => {
     heart = obj.children[0];
     heart.geometry.rotateX(-Math.PI * 0.5);
