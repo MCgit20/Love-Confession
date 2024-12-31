@@ -4,13 +4,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Utiliser min-height au lieu de height */
     background: url("heart_bg.jpg") no-repeat center center;
     background-size: cover;
     font-family: 'ZCOOL XiaoWei', serif;
     text-align: center;
-    overflow-y: auto;
+    overflow: auto; /* Autorise le défilement vertical et horizontal */
 }
+
 .confession {
     max-width: 600px;
     background: rgba(255, 255, 255, 0.8);
@@ -18,7 +19,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     animation: fadeIn 2s ease-out;
-    margin-bottom: 20px;
+    margin: 20px; /* Ajoute de l'espace autour pour éviter le débordement */
 }
 
 h1 {
