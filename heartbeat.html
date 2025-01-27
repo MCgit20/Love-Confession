@@ -45,7 +45,7 @@ src="static/js/jquery.min.js">
  	{ $("body").click(function(e) { var a = new Array("我爱你", "520","I love you","Je t'aime","사랑해요", "💖","I love you","Je t'aime","사랑해요", "💞","I love you","Je t'aime","사랑해요", "💥", "🐬","我爱你", "🐷","520", "🐶"); 
 var $i = $("<span/>").text(a[a_idx]); 
 a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY;  
- $i.css({ "z-index": 99, "top": y - 100, "left": x, "position": "absolute", "font-weight": "bold", "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")" }); $("body").append($i); $i.animate({ "top": y - 580, "opacity": 0 }, 1500, function(){ $i.remove(); }); }); });
+ $i.css({ "z-index": 99, "top": y - 100, "left": x, "position": "absolute", "font-weight": "bold", "font-size": "25px", "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")" }); $("body").append($i); $i.animate({ "top": y - 580, "opacity": 0 }, 1500, function(){ $i.remove(); }); }); });
  </script>
   </body>
 </html>
